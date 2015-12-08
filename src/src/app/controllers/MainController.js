@@ -137,8 +137,7 @@
             aMapDataColor = {};
 
             //data
-            angular.forEach(data.hits.hits, function(origRow){
-                origRow = origRow._source;
+            angular.forEach(data, function(origRow){
                 var object = {
                     ADgas_prod_MCF: parseInt(origRow.ADgas_prod_MCF),
                     NAgas_prod_MCF: parseInt(origRow.NAgas_prod_MCF),
